@@ -11,8 +11,8 @@ export default ({ src, background, backgroundColor, className }: Props) => {
     return (
         <img
             src={src}
-            className={`max-w-[52px] max-h-[52px] ${className} 
-                ${background == true && `p-2 ${backgroundColor} rounded-full`}`
+            className={`max-w-[52px] max-h-[52px] ${className != undefined ? className : ""} 
+                ${background == true && ` p-2 ${backgroundColor} rounded-full`}`
             }
         />
     )

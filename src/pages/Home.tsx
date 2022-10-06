@@ -2,6 +2,7 @@ import Container from "../components/Container";
 import Card from "../components/Card";
 import Button from "../components/Button";
 import Navigation from "../components/Navigation";
+import Icon from "../components/Icon";
 
 export default () => {
     return (
@@ -55,7 +56,43 @@ export default () => {
                     </p>
                 </div>
             </Container>
-            <Container className={"flex flex-col sm:grid sm:grid-cols-3"}>
+            <Container className={"flex flex-col mt-6"}>
+                <p className={"text-5xl text-alt text-center"}>Services</p>
+                <p className={"text-xl text-center"}>View the various services offered below.</p>
+                <div className={"flex flex-col sm:grid sm:grid-cols-2 gap-6 mt-20"}>
+                    <div className={"flex flex-col items-center"}>
+                        <div className={"mb-8"}>
+                            <div className={"flex flex-row items-center"}>
+                                <Icon src={"/icons/keyboard.svg"} className={"max-h-[64px] max-w-[64px]"} background backgroundColor={"bg-neutral-200"}/>
+                                <p className={"text-2xl ml-4"}>Piano/Keyboard</p>
+                            </div>
+                            <p className={"ml-[64px] pl-4 max-w-md"}>The piano is the instrument I have the most experience with, it is also my personal favorite. It's a timeless classic that goes well with any kind of event.</p>
+                        </div>
+                        <div>
+                            <div className={"flex flex-row items-center"}>
+                                <Icon src={"/icons/accordion.svg"} className={"max-h-[64px] max-w-[64px]"} background backgroundColor={"bg-neutral-200"}/>
+                                <p className={"text-2xl ml-4"}>Accordion</p>
+                            </div>
+                            <p className={"ml-[64px] pl-4 max-w-md"}>A rather uncommon instrument here in Canada, the accordion can create a very unique experience for your event.</p>
+                        </div>
+                    </div>
+                    <div className={"flex flex-col items-center"}>
+                        <div className={"mb-8"}>
+                            <div className={"flex flex-row items-center"}>
+                                <Icon src={"/icons/microphone.svg"} className={"max-h-[64px] max-w-[64px]"} background backgroundColor={"bg-neutral-200"}/>
+                                <p className={"text-2xl ml-4"}>Vocals</p>
+                            </div>
+                            <p className={"ml-[64px] pl-4 max-w-md"}>While I'm not a singer myself, I have various singers available to choose from so you can find the ideal vocals for your event.</p>
+                        </div>
+                        <div>
+                            <div className={"flex flex-row items-center"}>
+                                <Icon src={"/icons/saxophone.svg"} className={"max-h-[64px] max-w-[64px]"} background backgroundColor={"bg-neutral-200"}/>
+                                <p className={"text-2xl ml-4"}>Saxophone</p>
+                            </div>
+                            <p className={"ml-[64px] pl-4 max-w-md"}>A staple of Jazz, the saxophone is a great instrument to choose for a relaxed and laid back mood. It's one of my personal favorites as well.</p>
+                        </div>
+                    </div>
+                </div>
             </Container>
         </div>
     );
