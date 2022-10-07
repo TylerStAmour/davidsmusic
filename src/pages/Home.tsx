@@ -3,6 +3,7 @@ import Card from "../components/Card";
 import Button from "../components/Button";
 import Navigation from "../components/Navigation";
 import Icon from "../components/Icon";
+import Footer from "../components/Footer";
 
 export default () => {
     return (
@@ -18,7 +19,7 @@ export default () => {
                         <img className={"max-h-72 2xl:max-h-96 rounded-lg"} src={"/placeholder.png"}/>
                     </div>
                 </div>
-                <div className={"flex flex-col sm:grid sm:grid-cols-3 mt-32 2xl:mt-52 sm:gap-10 2xl:gap-16 mb-16"}>
+                <div className={"flex flex-col sm:grid sm:grid-cols-3 mt-32 2xl:mt-52 sm:gap-10 2xl:gap-16 mb-16 2xl:mb-24"}>
                     <Card className={"flex flex-col bg-neutral-50"} title={"Wedding Ceremonies"} icon={"/icons/church.svg"}>
                         <p className={"mt-5 pl-2 pr-2 mb-6"}>
                             Ready for your big day? Well, no need to worry! I've got you covered. With various affordable options, I'll make sure we can find something to suit your needs.
@@ -45,7 +46,7 @@ export default () => {
                     </Card>
                 </div>
             </Container>
-            <Container className={"flex flex-col sm:grid sm:grid-cols-2 bg-neutral-100 pt-16 pb-16"}>
+            <Container className={"flex flex-col sm:grid sm:grid-cols-2 bg-neutral-100 pt-16 pb-16 2xl:pt-24 2xl:pb-24"}>
                 <div className={"flex justify-center items-center"}>
                     <img className={"max-h-52 rounded-lg"} src={"/placeholder.png"}/>
                 </div>
@@ -56,7 +57,7 @@ export default () => {
                     </p>
                 </div>
             </Container>
-            <Container className={"flex flex-col mt-6"}>
+            <Container className={"flex flex-col mt-6 2xl:mt-12 mb-24"}>
                 <p className={"text-5xl text-alt text-center"}>Services</p>
                 <p className={"text-xl text-center"}>View the various services offered below.</p>
                 <div className={"flex flex-col sm:grid sm:grid-cols-2 gap-6 mt-20"}>
@@ -94,6 +95,18 @@ export default () => {
                     </div>
                 </div>
             </Container>
+            <Container className={"flex flex-col sm:grid sm:grid-cols-2 bg-neutral-200 pt-16 pb-16 2xl:pb-20 2xl:pt-20"}>
+                <div className={"flex justify-center"}>
+                    <div className={"flex flex-col"}>
+                        <p className={"text-5xl font-bold mb-2"}>Not convinced yet?</p>
+                        <p className={"text-lg text-alt"}>Feel free to contact me with any questions or inquiries.</p>
+                    </div>
+                </div>
+                <div className={"flex items-center justify-center"}>
+                    <Button to={"/contact"} className={"text-alt text-2xl border border-1 rounded-md border-neutral-500 w-fit pt-4 pb-4 p-6"}>Contact Me</Button>
+                </div>
+            </Container>
+            <Footer/>
         </div>
     );
 }
